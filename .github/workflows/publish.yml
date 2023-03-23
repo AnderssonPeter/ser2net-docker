@@ -28,8 +28,6 @@ jobs:
     - name: Docker meta
       id: meta
       uses: docker/metadata-action@v4
-      with:
-        images: debian:11-slim
     - name: Build and push
       id: docker_build
       uses: docker/build-push-action@v4
